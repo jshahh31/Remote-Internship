@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    
+    .container {
+      display: flex;
+      max-width: 800px;
+      margin: 100px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+    
+    .left-section {
+      flex: 1;
+      background-image: url('leaf_image.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.9;
+      transform: scaleX(-1);
+    }
+    
+    .right-section {
+      flex: 1;
+      padding: 15px 40px 40px 24px;
+    }
+    
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .logo img {
+      width: 45px;
+      height: auto;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    .input-group {
+      margin-bottom: 20px;
+    }
+    
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    
+    .input-group input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #33691e;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+    .btn:hover {
+      background-color: #255d00;
+    }
+    
+    .alt-signup {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .alt-signup p {
+      color: #666;
+    }
+    
+    .alt-signup .alt-signup-btn {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 10px 15px;
+      border-radius: 4px;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .alt-signup .alt-signup-btn.facebook {
+      background-color: #3b5998;
+    }
+    
+    .alt-signup .alt-signup-btn.google {
+      background-color: #dd4b39;
+    }
+    
+    .alt-signup .alt-signup-btn.apple {
+      background-color: #000;
+    }
+    
+    .alt-signup .alt-signup-btn:hover {
+      filter: brightness(90%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section"></div>
+    <div class="right-section">
+      <div class="logo">
+        <img src="leaf_logo_dark.png" alt="Leaf Logo">
+      </div>
+      <h2>Sign Up</h2>
+      <form action="#" method="post">
+        <div class="input-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+      <div class="alt-signup">
+        <p>Or sign up with:</p>
+        <a href="#" class="alt-signup-btn facebook">Facebook</a>
+        <a href="#" class="alt-signup-btn google">Google</a>
+        <a href="#" class="alt-signup-btn apple">Apple</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
